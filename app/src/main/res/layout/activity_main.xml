@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunyoung.android1.MainActivity">
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/number1"
+        android:layout_below="@+id/number1"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="두번째숫자"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:onClick="addClick"
+        android:layout_below="@+id/number2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:onClick="subClick"
+        android:layout_alignBaseline="@+id/addBtn"
+        android:layout_alignBottom="@+id/addBtn"
+        android:layout_toEndOf="@+id/addBtn" />
+
+    <Button
+        android:id="@+id/multBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:onClick="multClick"
+        android:layout_alignBaseline="@+id/subBtn"
+        android:layout_alignBottom="@+id/subBtn"
+        android:layout_toEndOf="@+id/subBtn" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:onClick="divideClick"
+        android:layout_alignBaseline="@+id/multBtn"
+        android:layout_alignBottom="@+id/multBtn"
+        android:layout_toEndOf="@+id/multBtn" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/number2"
+        android:layout_below="@+id/addBtn"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="61dp"
+        android:text="결과"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="첫번째숫자"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="16dp" />
+</RelativeLayout>
